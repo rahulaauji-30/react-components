@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Playpause from "./componenets/video components/Playpause";
+import MuteUnmute from "./componenets/video components/MuteUnmute";
+import Subtitles from "./componenets/video components/Subtitles";
+import Captions from "./componenets/video components/Captions";
+import Progressbar from "./componenets/video components/Progressbar";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Playpause/>
+      <MuteUnmute/>
+      <Subtitles/>
+      <Captions/>
+      <Progressbar/>
+    </>
   );
 }
 
